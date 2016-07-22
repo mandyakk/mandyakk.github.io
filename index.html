@@ -1,27 +1,38 @@
-<!DOCTYPE html>
-<html>
-<title>A. Akker</title>
 
-<head>
-<link href = "./stylesheet.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+body{
+	background-color: #A6D2FA;
+	margin: 50px;
+	border-left-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	line-height: 50px;
+	background-image:url(blue.jpg)
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
-<ul>
-  <li><a class="index.html" href="index.html">Home</a></li>
-  <li><a href="News.html">News</a></li>
-  <li><a href="school.html">School</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
+li {
+    float: left;
+}
 
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-<h1><font color="black"><font size = "20"><center>About Me - Amanda Akker</center></font>
-</h1>
-<p1><font color="black"><font size = "6"><center>Welcome to my website!</center></font>
-<line-height> 
-<img src="IMG_1971.JPG" height="300" width="500" align="right">
-<p2><font color="black"><font size = "5"><left>Hello! My name is Amanda Akker. On this website, you can learn more about me. </left></font>
-
-
-
-</html>
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+li {
+    border-right: 1px solid #929292;
+}
