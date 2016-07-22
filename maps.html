@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+   <ul>
+  <li><a class="index.html" href="index.html">Home</a></li>
+  <li><a href="News.html">News</a></li>
+  <li><a href="school.html">School</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="maps.html">Maps</a></li>
+</ul>
+  <body>
+    <h3>Maps</h3>
+    <div id="map"></div>
+  </body>
+<head>
+<link href = "./stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+  <head>
+    <style>
+       #map {
+        width: 80%;
+        height: 500px;
+		margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"> </div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 48.880, lng: 2.378},
+            zoom: 8
+        });
+		var myLatlng = {lat: 48.880, lng: 3.378};
+		var myLatlng2 = {lat: 21.127, lng: -86.813};
+		var myLatlng3 = {lat: 39.917, lng: 116.383};
+/*var mapOptions = {
+  zoom: 4,
+  center: myLatlng
+}*/
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+var marker = new google.maps.Marker({
+    position: myLatlng,
+    title:"Paris, France",
+});
+
+// To add the marker to the map, call setMap();
+marker.setMap(map);
+     
+	var marker2 = new google.maps.Marker({
+    position: myLatlng2,
+    title:"Cancun, Mexico"
+});
+
+// To add the marker to the map, call setMap();
+marker2.setMap(map);
+	 
+	  
+	 var marker3 = new google.maps.Marker({
+    position: myLatlng3,
+    title:"Beijing, China"
+});
+
+// To add the marker to the map, call setMap();
+marker3.setMap(map);
+	 
+	  }	  
+
+
+
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+  </body>
+</html>
